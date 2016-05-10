@@ -8,7 +8,7 @@
 
   <div class="form-group">
     <%= label_tag 'message[body]', 'Message' %>
-    <%= text_area_tag 'message[body]', nil, cols: 3, class: 'form-control', required: true %>
+    <%= text_field_tag 'message[body]', @body, class: 'form-control', required: true, size: 160, maxlength: 160  %>
   </div>
 
   <div class="form-group">
