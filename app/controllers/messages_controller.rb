@@ -2,6 +2,7 @@ class MessagesController < ApplicationController
   before_action :authenticate_user!
 
   def new
+    @body = "Hello, this is " + current_user.name + ". I'm intersted in talking soon."
   end
 
   def create
